@@ -1,6 +1,6 @@
 import random
 
-def getWordsFrom(filePath):
+def getWordsFrom(filePath="/usr/share/dict/words"):
     return open(filePath, 'r').read().split('\n')
 
 def pickRandomWords(amount, words):
@@ -14,6 +14,6 @@ def makeSentenceWith(words):
     return ' '.join(words) + '.'
 
 if __name__ == '__main__':
-    words = getWordsFrom('/usr/share/dict/words')
+    words = getWordsFrom()
     selectedWords = pickRandomWords(8, words)
     print(makeSentenceWith(selectedWords))
