@@ -1,16 +1,15 @@
 import random
 
 def getWordsFrom(filePath="/usr/share/dict/words"):
+    ''' Takes a file with words separated by \n and returns them in a list '''
     return open(filePath, 'r').read().split('\n')
 
 def pickRandomWords(amount, words):
-    selectedWords = []
-    for _ in range(amount):
-        randIndex = random.randint(0, len(words)-1)
-        selectedWords.append(words.pop(randIndex))
-    return selectedWords
+    ''' Returns a list of (amount) randomly chosen words from the words list '''
+    return [random.choice(words) for _ in range(amount)]
 
 def makeSentenceWith(words):
+    ''' Joins the words list by spaces and returns it '''
     return ' '.join(words) + '.'
 
 if __name__ == '__main__':
