@@ -5,10 +5,9 @@ def histogram(text):
     frequencies = {}
     words = text.split(' ') if type(text) == str else text
     for word in words:
-        try:
-            frequencies[word] += 1
-        except:
-            frequencies[word] = 1
+        if not frequencies[word]:
+            frequencies[word] = 0
+        frequencies[word] += 1 
     return frequencies
 
 def uniqueWords(text):
@@ -30,7 +29,12 @@ def chooseWordBasedOn(histogram):
     for word, frequency in histogram.items():
         for _ in range(frequency):
             words.append(word)
-    return words[random.randint(0, len(words)-1)]
+    return random.choice(words)
+
+# def dylansWay(histogram):
+#     start = random.randint(len(histogram))
+#     for key, value in histogram.items():
+#         start -= 
 
 # Test for the above function's accuracy
 def test():
