@@ -1,0 +1,7 @@
+1) Key features?
+    - Turn a text file into a histogram.
+    - Build a sentence based on a historgram using proper word frequencies.
+    - Tweet the sentences
+    - Display content on Flask webapp
+
+2) 

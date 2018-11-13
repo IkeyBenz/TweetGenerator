@@ -11,10 +11,11 @@ def pickRandomWords(amount, words):
 def makeSentenceWith(words):
     ''' Joins the words list by spaces and returns it '''
     return ' '.join(words) + '.'
+    
 def main():
     words = getWordsFrom()
     selectedWords = pickRandomWords(8, words)
     return makeSentenceWith(selectedWords)
 
 if __name__ == '__main__':
-    print(main)
+    print(main())
