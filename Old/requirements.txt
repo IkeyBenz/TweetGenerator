@@ -142,7 +142,7 @@ python-dateutil==2.6.1
 pytz==2017.3
 PyYAML==3.13
 requests==2.19.1
-rsa==3.4.2
+rsa==4.7
 scikit-learn==0.20.0
 scipy==1.1.0
 six==1.11.0
