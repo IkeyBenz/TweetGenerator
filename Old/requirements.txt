@@ -153,7 +153,7 @@ termcolor==1.1.0
 tqdm==4.23.4
 typed-ast==1.1.0
 uritemplate==3.0.0
-urllib3==1.22
+urllib3==1.26.5
 virtualenv==16.1.0
 Werkzeug==0.14.1
 wrapt==1.10.11
